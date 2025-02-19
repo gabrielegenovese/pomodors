@@ -1,0 +1,10 @@
+[package]
+name = "pomodors"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+notify-rust = "4"
+eframe = "0.31.0"
+egui_extras = "0.31.0"
+env_logger = "0.10"

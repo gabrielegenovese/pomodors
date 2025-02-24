@@ -43,16 +43,16 @@ fn show_timer(ui: &mut Ui, timer: i32) -> Response {
 
 impl eframe::App for TimerApp {
     fn update(&mut self, ctx: &egui::Context, _: &mut eframe::Frame) {
-        egui::TopBottomPanel::top("top_panel").show(ctx, |ui| {
-            ui.horizontal(|ui| {
-                ui.label("Pomodoro Timer");
-                ui.with_layout(Layout::right_to_left(egui::Align::Center), |ui| {
-                    if ui.button("❌").clicked() {
-                        ui.ctx().send_viewport_cmd(egui::ViewportCommand::Close);
-                    }
-                });
-            });
-        });
+        // egui::TopBottomPanel::top("top_panel").show(ctx, |ui| {
+        //     ui.horizontal(|ui| {
+        //         ui.label("Pomodoro Timer");
+        //         ui.with_layout(Layout::right_to_left(egui::Align::Center), |ui| {
+        //             if ui.button("❌").clicked() {
+        //                 ui.ctx().send_viewport_cmd(egui::ViewportCommand::Close);
+        //             }
+        //         });
+        //     });
+        // });
 
         egui::CentralPanel::default().show(ctx, |ui| {
             ui.with_layout(Layout::left_to_right(egui::Align::Center), |ui| {
